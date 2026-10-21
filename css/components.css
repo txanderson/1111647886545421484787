@@ -17,7 +17,7 @@
 }
 .site-header__logo { flex: none; }
 /* Logo: no máximo a altura da barra (--header-h = 4.5rem), assim o cabeçalho não cresce */
-.site-header__logo img { height: 4.5rem; width: auto; }
+.site-header__logo img { height: 3.4rem; width: auto; }
 .site-header__cta { display: none; }
 
 /* Botão hambúrguer */
@@ -56,7 +56,7 @@
 /* Desktop: menu horizontal */
 @media (min-width: 1025px) {
   .site-header__bar { gap: clamp(1rem, 2.4vw, 2.5rem); }
-  .site-header__logo img { height: clamp(5rem, 6.4vw, 6rem); margin-left: clamp(0rem, 1.3vw, 1.2rem); } /* barra = 98px (6.1rem) */
+  .site-header__logo img { height: clamp(3.8rem, 5vw, 4.6rem); margin-left: clamp(0rem, 1.3vw, 1.2rem); } /* barra = 98px (6.1rem) */
   .burger { display: none; }
 
   .nav {
@@ -255,7 +255,7 @@
   padding: 3.2rem 0 0;
 }
 .site-footer__logo { display: block; width: fit-content; margin-inline: auto; }
-.site-footer__logo img { width: clamp(220px, 60vw, 300px); height: auto; margin-inline: auto; }
+.site-footer__logo img { width: clamp(200px, 52vw, 260px); height: auto; margin-inline: auto; }
 .site-footer__copy {
   width: min(100% - 2 * var(--gutter), 1140px); margin: 2.15rem auto 0;
   padding: 1.55rem 0 calc(1.55rem + env(safe-area-inset-bottom, 0px));
