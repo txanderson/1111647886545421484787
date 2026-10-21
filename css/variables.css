@@ -1,0 +1,69 @@
+/* ==========================================================
+   VARIÁVEIS DE DESIGN  ·  edite aqui cores, fontes e espaços
+   ========================================================== */
+:root {
+  /* Cores da marca */
+  --mist:        #E6EBF1;   /* fundo principal (azul-acinzentado) */
+  --mist-deep:   #DCE2EC;
+  --paper:       #FFFFFF;
+  --peach:       #EBCDBE;   /* topo do hero */
+  --clay-500:    #A85F3A;   /* fundo de seções (texto branco AA) */
+  --clay-600:    #A9552F;   /* botões e títulos */
+  --clay-700:    #8F4824;   /* hover / texto pequeno sobre claro */
+  --clay-900:    #B46233;   /* faixa "Minhas abordagens" */
+  --brand:       #BC7853;   /* cor única de botões e ícones */
+  --brand-hover: #A5663F;   /* hover dos botões */
+  --sand:        var(--brand);   /* detalhes e ícones */
+  --ink:         #2A1F1B;   /* texto principal */
+  --ink-soft:    #5A4A43;   /* texto secundário */
+
+  /* FAQ (cores do site original) */
+  --faq-open:   var(--brand);   /* barra da pergunta aberta */
+  --faq-closed: #F8F9FB;   /* barras fechadas */
+  --faq-q:      #19171D;   /* texto das perguntas */
+  --faq-a:      #4B4C59;   /* texto da resposta */
+  --heading:    #AA6133;   /* títulos de seção (Prata) */
+  --faq-title:  var(--heading);
+  --faq-sub:    #5D5D69;   /* "Perguntas frequentes" */
+
+  /* Cores do logotipo (usadas só em detalhes) */
+  --rose: #D4607F;
+  --teal: #4FA7A3;
+  --gold: #D4A832;
+
+  /* Tipografia */
+  --font-display: "Prata", "Iowan Old Style", Georgia, serif;
+  --font-header:  "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-body:    "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --step--1: clamp(.875rem, .85rem + .12vw, .95rem);
+  --step-0:  1rem;
+  --step-1:  clamp(1.2rem, 1.1rem + .5vw, 1.45rem);
+  --step-h3: clamp(1.35rem, 1.15rem + 1vw, 1.8rem);
+  --step-h2: clamp(1.95rem, 1.3rem + 2.8vw, 3.35rem);
+  --step-h2xl: clamp(2.8rem, 1.6rem + 5vw, 5rem);
+  --step-h1: clamp(2.15rem, 1.15rem + 4.4vw, 4.2rem);
+
+  /* Espaçamento e forma */
+  --gutter:    clamp(1.1rem, 4.5vw, 2rem);
+  --container: 1300px;
+  --section-y: clamp(3.75rem, 8vw, 7rem);
+  --radius:    1.5rem;
+  --radius-lg: 1.75rem;
+  --header-h:  4.5rem;     /* altura da barra (sem a faixa de 6px do topo) */
+
+  /* Cabeçalho (cores do site original) */
+  --nav:       #A65F38;    /* links do menu */
+  --nav-hover: #A9552F;
+  --header-btn:var(--brand);    /* botão Entrar em Contato */
+  --header-btn-hover:var(--brand-hover);
+
+  --shadow-soft: 0 10px 30px -12px rgba(70, 50, 60, .28);
+  --shadow-card: 0 18px 40px -18px rgba(60, 40, 40, .35);
+
+  --ease: cubic-bezier(.22, .8, .24, 1);
+}
+
+@media (min-width: 1025px) {
+  :root { --header-h: 98px; }
+}
