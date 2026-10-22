@@ -67,10 +67,6 @@
       });
       if (this.prev) this.prev.disabled = !this.loop && this.index <= 0;
       if (this.next) this.next.disabled = !this.loop && this.index >= this.max;
-      this.slides.forEach((s, k) => {
-        const on = k >= this.index && k < this.index + this.per;
-        s.toggleAttribute('data-active', on);
-      });
     }
 
     interact() { this.stopped = true; this.stopAutoplay(); }

@@ -69,7 +69,6 @@ p { text-wrap: pretty; }
   color: var(--clay-600);
 }
 .h2--xl { font-size: var(--step-h2xl); color: #fff; line-height: 1.02; }
-.h3 { font-family: var(--font-display); font-weight: 400; font-size: var(--step-h3); line-height: 1.2; }
 .eyebrow {
   font-size: var(--step--1);
   font-weight: 500;
@@ -95,8 +94,6 @@ p { text-wrap: pretty; }
 .btn:active { transform: translateY(1px) scale(.99); }
 .btn--primary { background: var(--brand); color: #fff; box-shadow: 0 8px 20px -10px rgba(143, 72, 36, .7); }
 .btn--primary:hover { background: var(--brand-hover); }
-.btn--secondary { background: rgba(255, 255, 255, .75); border-color: rgba(42, 31, 27, .15); color: var(--ink); }
-.btn--secondary:hover { background: #fff; border-color: rgba(42, 31, 27, .3); }
 .btn--ghost { background: var(--brand); border-color: rgba(255, 255, 255, .7); color: #fff; }
 .btn--ghost:hover { background: #fff; color: var(--brand-hover); }
 
