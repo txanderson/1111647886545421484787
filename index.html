@@ -43,7 +43,7 @@
       "@id": "https://thalitamacedo.com.br/#website",
       "url": "https://thalitamacedo.com.br/",
       "name": "Thalita Macedo | Psicóloga",
-      "description": "Psicóloga clínica e terapeuta de casais. Atendimento em terapia de casal e psicoterapia individual.",
+      "description": "Psicóloga clínica e terapeuta de casais. Atendimento online em terapia de casal e psicoterapia individual.",
       "inLanguage": "pt-BR",
       "publisher": {
         "@id": "https://thalitamacedo.com.br/#negocio"
@@ -54,7 +54,7 @@
       "@id": "https://thalitamacedo.com.br/#webpage",
       "url": "https://thalitamacedo.com.br/",
       "name": "Thalita Macedo | Psicóloga e Terapia de Casal Online",
-      "headline": "Terapia de casal para reconstruir o diálogo e fortalecer relacionamentos",
+      "headline": "Terapia de casal online para reconstruir o diálogo e fortalecer relacionamentos",
       "description": "Conheça o trabalho da psicóloga Thalita Macedo. Atendimento online em terapia de casal e psicoterapia individual, com abordagem cognitivo-comportamental.",
       "isPartOf": {
         "@id": "https://thalitamacedo.com.br/#website"
@@ -76,10 +76,20 @@
       "image": "https://thalitamacedo.com.br/img/og.jpg",
       "logo": "https://thalitamacedo.com.br/img/logo-cabecalho.png",
       "telephone": "+55-11-91562-8953",
-      "areaServed": {
-        "@type": "Country",
-        "name": "Brasil"
-      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Estado de São Paulo",
+          "containedInPlace": {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        },
+        {
+          "@type": "Country",
+          "name": "Brasil"
+        }
+      ],
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+55-11-91562-8953",
@@ -376,6 +386,24 @@
       ],
       "founder": {
         "@id": "https://thalitamacedo.com.br/#thalita"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços de Psicologia",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://thalitamacedo.com.br/#terapia-casal"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://thalitamacedo.com.br/#psicoterapia-individual"
+            }
+          }
+        ]
       }
     },
     {
@@ -693,6 +721,44 @@
       ],
       "worksFor": {
         "@id": "https://thalitamacedo.com.br/#negocio"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://thalitamacedo.com.br/#terapia-casal",
+      "name": "Terapia de Casal Online",
+      "serviceType": "Psicoterapia de casal",
+      "description": "Atendimento psicológico online para casais que desejam melhorar o diálogo, fortalecer a conexão e trabalhar dificuldades no relacionamento.",
+      "provider": {
+        "@id": "https://thalitamacedo.com.br/#negocio"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Estado de São Paulo",
+          "containedInPlace": {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        },
+        {
+          "@type": "Country",
+          "name": "Brasil"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://thalitamacedo.com.br/#psicoterapia-individual",
+      "name": "Psicoterapia Individual Online",
+      "serviceType": "Psicoterapia individual",
+      "description": "Atendimento psicológico individual online, com abordagem cognitivo-comportamental.",
+      "provider": {
+        "@id": "https://thalitamacedo.com.br/#negocio"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
       }
     }
   ]
