@@ -1,0 +1,32 @@
+# robots.txt de https://thalitamacedo.com.br
+# Regra geral: buscadores e assistentes de IA podem ler todo o site.
+User-agent: *
+Allow: /
+
+# Rastreadores de IA e de busca com IA (permitidos de propósito, para o site ser citado em respostas de IA).
+# Se um dia quiser bloquear algum, troque "Allow: /" por "Disallow: /" no bloco dele.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://thalitamacedo.com.br/sitemap.xml
